@@ -1,0 +1,5 @@
+SECRET_KEY=
+ID_INTEGRATION_KEY=
+AUTH_CODE=
+BASE_URL=https://jukezok.amocrm.ru
+REDIRECT_URI=https://9e75-92-51-73-238.ngrok-free.app
