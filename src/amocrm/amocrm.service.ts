@@ -68,7 +68,7 @@ export class AmocrmService implements OnModuleInit {
         error?.response?.data?.hint == 'Authorization code has been revoked'
       ) {
         console.log('if Authorization code has been revoked');
-        // если AUTH_CODE протух, считываем последние актуальные токены из джсона.
+        // если AUTH_CODE уже заюзан, считываем последние актуальные токены из джсона.
         // если они валидны, сервер продолжит работу
         // если токены устарели, нужно обновить AUTH_CODE
         const info = this.readTokensFromBd();

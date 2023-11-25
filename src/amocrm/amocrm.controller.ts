@@ -4,14 +4,6 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
-// {
-//   hint: 'Authorization code has expired',
-//   title: 'Некорректный запрос',
-//   type: 'https://developers.amocrm.ru/v3/errors/OAuthProblemJson',
-//   status: 400,
-//   detail: 'В запросе отсутствует ряд параметров или параметры невалидны'
-// }
-
 @Controller()
 export class AmocrmController {
   constructor(private readonly amocrmService: AmocrmService) {}
