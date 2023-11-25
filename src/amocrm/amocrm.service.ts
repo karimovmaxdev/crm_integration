@@ -65,7 +65,8 @@ export class AmocrmService implements OnModuleInit {
       this.saveTokensToBd();
     } catch (error) {
       if (
-        error?.response?.data?.hint == 'Authorization code has been revoked'
+        error?.response?.data?.hint == 'Authorization code has been revoked' ||
+        error?.response?.data?.hint == 'Authorization code has expired'
       ) {
         console.log('if Authorization code has been revoked');
         // если AUTH_CODE уже заюзан, считываем последние актуальные токены из джсона.
