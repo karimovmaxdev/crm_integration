@@ -1,4 +1,4 @@
-amoCRM login - jukezok@mail.ru
+amoCRM login - jukezok@mail.ru \n
 amoCRM password - Je$nes21!
 
 для get запроса с данными контакта, нужно стучать на ендпоинт /amocrm
